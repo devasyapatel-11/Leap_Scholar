@@ -36,8 +36,8 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
           </p>
           <div className="mt-12 grid grid-cols-2 gap-6">
             <div className="p-4 rounded-lg bg-primary-foreground/10 backdrop-blur">
-              <div className="text-3xl font-bold">28</div>
-              <div className="text-sm text-primary-foreground/70">Day Study Plan</div>
+              <div className="text-3xl font-bold">∞</div>
+              <div className="text-sm text-primary-foreground/70">Adaptive Study Plans</div>
             </div>
             <div className="p-4 rounded-lg bg-primary-foreground/10 backdrop-blur">
               <div className="text-3xl font-bold">4</div>

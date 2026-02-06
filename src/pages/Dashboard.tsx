@@ -67,10 +67,10 @@ export default function Dashboard() {
         examDate={profile?.exam_date ? new Date(profile.exam_date) : null}
       />
 
-      <main className="container mx-auto px-4 py-8">
-        <div className="grid lg:grid-cols-3 gap-6">
-          {/* Main content - 2 columns on desktop */}
-          <div className="lg:col-span-2 space-y-6">
+      <main className="container mx-auto px-4 py-6 sm:py-8">
+        <div className="grid lg:grid-cols-3 gap-4 lg:gap-6">
+          {/* Main content - 2 columns on desktop, 1 column on mobile */}
+          <div className="lg:col-span-2 space-y-4 lg:space-y-6">
             <AdaptiveDailyGoalCard 
               goal={todayGoal}
               onComplete={handleGoalComplete}
@@ -83,8 +83,8 @@ export default function Dashboard() {
             />
           </div>
 
-          {/* Sidebar - 1 column */}
-          <div className="space-y-6">
+          {/* Sidebar - 1 column on desktop, below main content on mobile */}
+          <div className="space-y-4 lg:space-y-6">
             <MomentumSaver 
               onRecoveryStart={handleRecoveryStart}
               onRecoveryComplete={handleRecoveryComplete}

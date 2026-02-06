@@ -150,7 +150,7 @@ const AdaptiveDailyGoalCard: React.FC<AdaptiveDailyGoalCardProps> = ({
               <p className="text-gray-600">{goal.description}</p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-gray-500" />
                 <span className="text-sm">{goal.durationMinutes} minutes</span>
@@ -177,7 +177,7 @@ const AdaptiveDailyGoalCard: React.FC<AdaptiveDailyGoalCardProps> = ({
 
             <Button 
               onClick={handleStartGoal}
-              className="w-full"
+              className="w-full sm:w-auto"
               size="lg"
               disabled={goal.isCompleted || !isGoalAvailable()}
             >
