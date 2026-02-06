@@ -1,4 +1,4 @@
-import ReactNode from 'react';
+import { ReactNode } from 'react';
 import { BookOpen } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
