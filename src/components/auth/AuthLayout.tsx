@@ -28,7 +28,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
             <span className="text-2xl font-bold cursor-pointer hover:opacity-80 transition-opacity" onClick={handleLogoClick}>LeapScholar</span>
           </div>
           <h1 className="text-4xl font-bold mb-4">
-            Master IELTS in 28 Days
+            Master IELTS Your Way
           </h1>
           <p className="text-lg text-primary-foreground/80 max-w-md">
             Personalized daily micro-goals, adaptive learning, and smart progress tracking 
