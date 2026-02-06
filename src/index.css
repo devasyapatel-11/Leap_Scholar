@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* IELTS Daily Prep Design System
+   Colors: Indigo primary, Green success, Amber warning, minimal Red danger
+   Typography: Inter font family
+   All colors MUST be HSL.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Background - Light gray #F9FAFB */
+    --background: 210 20% 98%;
+    /* Foreground - Dark gray #1F2937 */
+    --foreground: 220 13% 18%;
+
+    /* Card - White with subtle styling */
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    /* Primary - Indigo #4F46E5 */
+    --primary: 243 75% 59%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Light indigo tint */
+    --secondary: 240 60% 97%;
+    --secondary-foreground: 243 75% 59%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 240 60% 97%;
+    --accent-foreground: 243 75% 59%;
+
+    /* Destructive - Red #EF4444 */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Success - Green #10B981 */
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Amber #F59E0B */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 243 75% 59%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 210 20% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Chart colors for skill progress */
+    --chart-listening: 243 75% 59%;
+    --chart-reading: 160 84% 39%;
+    --chart-writing: 38 92% 50%;
+    --chart-speaking: 280 68% 60%;
+  }
+
+  .dark {
+    --background: 220 13% 10%;
+    --foreground: 210 20% 98%;
+
+    --card: 220 13% 14%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 220 13% 14%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 243 75% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 13% 20%;
+    --secondary-foreground: 243 75% 65%;
+
+    --muted: 220 13% 20%;
+    --muted-foreground: 220 9% 65%;
+
+    --accent: 220 13% 20%;
+    --accent-foreground: 243 75% 65%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 160 84% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 220 13% 20%;
+    --input: 220 13% 20%;
+    --ring: 243 75% 65%;
+
+    --sidebar-background: 220 13% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --chart-listening: 243 75% 65%;
+    --chart-reading: 160 84% 45%;
+    --chart-writing: 38 92% 55%;
+    --chart-speaking: 280 68% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
